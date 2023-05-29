@@ -30,6 +30,9 @@ export default class PnpJsTestingWebpart extends React.Component<IPnpJsTestingWe
 
 	public async componentDidMount(): Promise<void> {
 		// anything to load? Maybe later with certain tests?
+
+		document.getElementById('workbenchPageContent').style.maxWidth = "90%";
+		(document.getElementsByClassName('CanvasZone')[0] as HTMLDivElement).style.maxWidth = "100%";
 	}
 
 	public addLogEntry(message: string, color: string = "darkgray"): void {
