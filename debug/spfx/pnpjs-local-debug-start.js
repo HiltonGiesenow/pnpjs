@@ -13,7 +13,8 @@ child_process.spawn(isWin ? "npx.cmd" : "npx", ["tsc", "-p", "./packages/tsconfi
 });
 
 // run our server
-child_process.spawn(isWin ? "npx.cmd" : "npx", ["gulp", "serve", "--nobrowser"], {
+// child_process.spawn(isWin ? "npx.cmd" : "npx", ["gulp", "serve", "--nobrowser"], {
+child_process.spawn(isWin ? "npx.cmd" : "npx", ["npm", "run", "serve", "--nobrowser"], {
     cwd: __dirname,
     stdio: "inherit",
 });

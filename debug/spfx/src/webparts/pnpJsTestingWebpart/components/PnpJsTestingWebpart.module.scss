@@ -1,0 +1,30 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.pnpJsTestingWebpart {
+	display: flex;
+	justify-content: space-between;
+
+	.teams {
+		// placeholder
+		display: block;
+	}
+}
+
+.controlsContainer {
+	display: block;
+	width: 50%;
+
+	h2 {
+		font-size: 1.1rem;
+	}
+}
+
+.logContainer {
+	background-color: black;
+	color: white;
+	width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+	max-height: 70vw;
+    overflow-y: auto;
+}
